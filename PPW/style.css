@@ -1,0 +1,2173 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('fc_barcelona_2.jpg');
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  margin-bottom: 0;
+}
+
+.user-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.register-btn,
+.login-btn {
+  background-color: #ec0511;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-image: url('white_logo.png');
+  background-size: 20px 20px;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.login-btn {
+  background-color: #0626db;
+}
+
+.btn:hover,
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+nav {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 29%, rgba(151, 11, 16, 1) 100%);
+  height: 32px;
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+}
+
+nav ul li:hover a {
+  color: yellow;
+  text-decoration: underline;
+}
+
+nav img {
+  filter: blur(0px);
+  width: 100px;
+}
+
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: flex;
+  padding: 8px 12px;
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-links img {
+  width: 15%;
+  height: auto;
+  margin-left: 5px;
+}
+
+
+.box {
+  border-radius: 3px #0056b3;
+  position: relative;
+}
+
+
+.news {
+  margin-bottom: 0;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.news1 {
+  display: flex;
+  overflow: hidden;
+}
+
+
+.news-image {
+  width: 33%;
+  height: 600px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+}
+
+.news-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.news-image:hover {
+  transform: scale(1.2);
+}
+
+.news-image:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-overlay h3 {
+  margin-bottom: 50px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-style: bold;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 520px;
+  background-image: url('campnight.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.intro p {
+  font-size: 20px;
+  color: #d1d1d1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.mains {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d1d1d1;
+}
+
+
+.intro button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid yellow;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+button:hover {
+  background: yellow;
+  transition: all 0.2s ease-out;
+}
+
+.title {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr 2fr;
+  width: 32%;
+  height: 450px;
+  background-color: aliceblue;
+}
+
+.data {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  color: white;
+  background-color: #181733;
+}
+
+.data h2 {
+  margin-left: 8px;
+  margin-top: 10px;
+}
+
+.ziua {
+  font-size: 12px;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 180px;
+}
+
+.ziua p {
+  font-size: 12px;
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.next {
+  font-size: 14px;
+  margin-right: 10px;
+  font-style: italic;
+  color: yellow;
+}
+
+.barca img {
+  margin-left: 10px;
+  margin-top: 15px;
+  width: 100%;
+  height: 20%;
+}
+
+.liga img {
+  width: 80%;
+  height: 26%;
+}
+
+.adversar img {
+  width: 88%;
+  height: 30%;
+}
+
+.liga {
+  margin-left: 35%;
+  width: 33%;
+  height: 365%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.adversar {
+  display: flex;
+}
+
+
+.principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+}
+
+.time {
+  margin-left: 10%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  background: linear-gradient(45deg,
+      hsl(348deg 92% 49%) 1%,
+      hsl(320deg 100% 36%) 50%,
+      hsl(232deg 83% 34%) 99%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding: 0;
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.time h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.2em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.info {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info h3 {
+  font-size: 24px;
+  display: flex;
+  justify-self: center;
+  margin: 0;
+}
+
+.info p {
+  display: flex;
+  justify-self: center;
+  margin: 0;
+  font-size: 12px;
+  /* specificat tipul de unitate pentru font-size */
+}
+
+.ticket {
+  justify-self: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.ticket button {
+  background-color: #e8f409;
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+.ticket button:hover {
+  background-color: #f40c0c;
+  color: #fff;
+}
+
+
+.first-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  background-image: url('magicpattern-confetti-1699782169153.png');
+  color: white;
+  text-align: center;
+}
+
+.first-team :hover {
+  color: rgb(224, 228, 16);
+}
+
+.slider {
+  width: 100%;
+  background-image: url('magicpattern-confetti-1699782169153.png');
+  height: fit-content;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5%;
+  justify-content: space-around;
+  overflow: hidden
+}
+
+
+.player-details {
+  color: white;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  row-gap: 0;
+  margin-top: 68%;
+  transition: margin-top 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+  font-size: 170%;
+  align-content: center;
+  justify-items: center;
+  align-items: start;
+  justify-content: space-evenly;
+}
+
+.player-details:hover {
+  color: yellow;
+  margin-top: 60%;
+}
+
+.player1 {
+  width: 100%;
+  height: 79%;
+  background-image: linear-gradient(0deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('09-ROBERT_LEWANDOWSKI.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+}
+
+.player1:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(180deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('09-ROBERT_LEWANDOWSKI.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.player2 {
+  width: 100%;
+  height: 79%;
+  background-image: linear-gradient(0deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('30-GAVI_.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+}
+
+.player2:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(180deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('30-GAVI_.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.player3 {
+  width: 100%;
+  height: 79%;
+  background-image: linear-gradient(0deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('08-PEDRI.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+}
+
+.player3:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(180deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('08-PEDRI.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.player4 {
+  width: 100%;
+  height: 86%;
+  background-image: linear-gradient(0deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('21-FRENKIE_DE_JONG.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+}
+
+.player4:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(180deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('21-FRENKIE_DE_JONG.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.player5 {
+  width: 100%;
+  height: 86%;
+  background-image: linear-gradient(0deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('11-FERRAN_TORRES.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+}
+
+.player5:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(180deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('11-FERRAN_TORRES.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.player6 {
+  width: 100%;
+  height: 86%;
+  background-image: linear-gradient(0deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('04-RONALD_ARAUJO_.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+}
+
+.player6:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(180deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('04-RONALD_ARAUJO_.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.player7 {
+  width: 100%;
+  height: 86%;
+  background-image: linear-gradient(0deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('BALDE.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+}
+
+.player7:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(180deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('BALDE.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.player8 {
+  width: 100%;
+  height: 86%;
+  background-image: linear-gradient(0deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('cancelo.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+}
+
+.player8:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(180deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('cancelo.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.player9 {
+  width: 100%;
+  height: 86%;
+  background-image: linear-gradient(0deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('felix.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+}
+
+.player9:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(180deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('felix.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.player10 {
+  width: 100%;
+  height: 68%;
+  background-image: linear-gradient(0deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('22-RAPHINHA.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+}
+
+.player10:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(180deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('22-RAPHINHA.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.player11 {
+  width: 100%;
+  height: 68%;
+  background-image: linear-gradient(0deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('01-MARC-ANDRE_TER_STEGEN.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+}
+
+.player11:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(180deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('01-MARC-ANDRE_TER_STEGEN.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.player12 {
+  width: 100%;
+  height: 68%;
+  background-image: linear-gradient(0deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('00_XAVI_HERNANDEZ.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+}
+
+.player12:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(180deg, #181733 0, rgba(24, 23, 51, 0) 60%, rgba(24, 23, 51, 0) 80%, #181733), url('00_XAVI_HERNANDEZ.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.columns {
+  height: 20%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color: #d1d1d1;
+  background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 29%, rgba(63, 4, 28, 1) 58%, rgba(151, 11, 16, 1) 100%);
+  align-content: stretch;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.column {
+  flex: 1;
+  border: 1px solid #666;
+  margin: 2%;
+  padding: 5%;
+  transition: 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content :hover {
+  display: flex;
+  flex-direction: column;
+  color: yellow;
+  cursor: pointer;
+}
+
+.column img {
+  display: flex;
+  width: 45%;
+  height: 75%;
+  justify-content: center;
+  align-items: center;
+}
+
+.column:first-child {
+  margin-left: 0;
+}
+
+.column:last-child {
+  margin-left: 0;
+}
+
+.blog-section {
+  width: 100%;
+}
+
+.blog-section .section-content {
+  width: 85%;
+  margin: 20px auto;
+}
+
+.blog-section .section-content .title {
+  color: rgb(123, 7, 131);
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+
+.blog-section .section-content .title h2 {
+  font-size: 40px;
+  color: rgb(123, 7, 131);
+  text-transform: uppercase;
+}
+
+.blog-section .section-content .title p {
+  font-size: 18px;
+  color: #000;
+  margin-top: 20px;
+}
+
+.blog-section .section-content .cards1 {
+  height: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+}
+
+.blog-section .section-content .cards1 .card1 {
+  margin-top: 18px;
+  width: 100%;
+  height: 530px;
+  background-color: #f7f7f7;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-section .section-content .cards1 .card1 img {
+  width: 100%;
+  height: 80%;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.blog-section .section-content .cards1 .card1 img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.blog-section .section-content .cards1 .card1 .article {
+  padding: 1px 2px;
+}
+
+.blog-section .section-content .cards1 .card1 .article h4 {
+  font-size: 24px;
+  color: #4a4a4a;
+}
+
+.blog-section .section-content .cards1 .card1 .article p {
+  font-size: 16px;
+  margin: 10px 0px;
+  color: #6a6a6a;
+}
+
+.blog-section .section-content .cards1 .card1 a {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(118, 8, 95, 1) 0%, rgba(41, 19, 170, 1) 48%, rgba(226, 31, 38, 1) 100%);
+  padding: 8px 15px;
+  margin-left: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.blog-section .section-content .cards1 .card1 a:hover {
+  background: linear-gradient(90deg, rgba(226, 31, 38, 1) 10%, rgba(41, 19, 170, 1) 48%, rgba(118, 8, 95, 1) 90%);
+  transform: scale(1.1);
+}
+
+.blog-section .section-content .cards1 .card1 .posted-date p {
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  color: #d1d1d1;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 29%, rgba(151, 11, 16, 1) 100%);
+  padding: 6px 15px;
+}
+
+.partners {
+  display: flex;
+  justify-content: space-around;
+  background-image: url(part.png);
+  height: 200px;
+}
+
+.nike img {
+  margin-top: 25%;
+  width: 100%;
+  height: 80%;
+}
+
+.spotify img {
+  width: 250%;
+  height: 130%;
+  margin-left: 30%;
+  margin-bottom: 50%;
+}
+
+.bet img {
+  margin-top: 5%;
+  color: aliceblue;
+  width: 100%;
+  height: 140%;
+}
+
+.footer {
+  height: 300px;
+  width: 100%;
+  background-color: #181733;
+  border: 1px solid;
+
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color: #d1d1d1;
+}
+
+.h1 h2 {
+  font-size: 15PX;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.media {
+  height: 100px;
+  width: 25%;
+  border: 1px transparent;
+  display: flex;
+  margin-top: 5px;
+  justify-content: space-around;
+}
+
+.media a {
+  color: white;
+  margin-left: 0;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.media a:hover {
+  color: yellow;
+}
+
+.media:hover {
+  color: yellow;
+  font-size: 15px
+}
+
+.facebook {
+  height: 100px;
+  width: 150px;
+  background-color: #3b5998;
+}
+
+.facebook img {
+  width: 40px;
+  height: 36px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.instagram {
+  background: linear-gradient(#fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  height: 100px;
+  width: 150px;
+}
+
+.instagram img {
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.youtube img {
+  margin-top: 8px;
+  margin-left: 5px;
+  width: 40px;
+  height: 30px;
+  color: white;
+}
+
+.spotify1 img {
+  margin-top: 8px;
+  margin-left: 5px;
+  width: 40px;
+  height: 35px;
+  color: white;
+}
+
+.spotify1 {
+  height: 100px;
+  width: 150px;
+  background-color: #00d365;
+}
+
+.youtube {
+  height: 100px;
+  width: 150px;
+  background-color: #bb0000;
+}
+
+.tiktok {
+  height: 100px;
+  width: 150px;
+  background-color: black;
+}
+
+.tiktok img {
+  height: 40px;
+  width: 40px;
+}
+
+.container {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+}
+
+.logo {
+  text-align: left;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.copyright {
+  text-align: left;
+  font-size: 12px;
+}
+
+.links {
+  text-align: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links li {
+  text-align: right;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links {
+  text-align: left;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links li a {
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.infor {
+  background-color: #181733;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.seven {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.seven p {
+  font-size: 12px;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.imagine img {
+  width: 50px;
+  height: 50px;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imagine {
+  display: flex;
+  flex-direction: row;
+}
+
+.imagine h1 {
+  margin-top: 4px;
+}
+
+.terms {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  margin-right: 50px;
+  margin-left: 150px;
+}
+
+.terms p {
+  margin-top: 50px;
+  border-bottom: 2px solid #fff;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 375px) {
+  header {
+    height: 800px;
+  }
+
+  .user-buttons {
+    justify-content: flex-end;
+    margin-right: 5px;
+  }
+
+  .register-btn,
+  .login-btn {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 16px;
+    margin-right: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-position: 10px center;
+    padding-left: 40px;
+  }
+
+  nav {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+  }
+
+  nav img {
+    margin-top: 50px;
+    width: 10%;
+
+  }
+
+  .nav-links {
+    font-size: 12px;
+  }
+
+  .nav-links ul {
+    display: flex;
+  }
+
+  .nav-links ul li a {
+    margin-top: 0;
+    padding: 2px 4px;
+    font-size: 5px;
+  }
+
+  .news {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .news1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+
+  .news-image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .image-overlay h3 {
+    font-size: 14px;
+  }
+
+  .intro {
+    height: 400px;
+  }
+
+  .intro h1 {
+    font-size: 40px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .mains {
+    min-height: 50vh;
+  }
+
+  .title {
+    font-size: 20px;
+
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    height: 300px;
+  }
+
+  .data {
+    font-size: 20px;
+    height: 50px;
+  }
+
+  .data h2 {
+    font-size: 10px;
+  }
+
+  .liga {
+    display: none;
+  }
+
+  .barca {
+    flex-direction: column;
+    width: 14%;
+  }
+
+  .adversar {
+    margin-right: 5%;
+    flex-direction: column;
+    width: 24%;
+  }
+
+  .time {
+    margin-left: 8%;
+    font-size: 15px;
+
+  }
+
+  .info h3 {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .info p {
+    font-size: 5px;
+  }
+
+  .ticket button {
+    width: 60px;
+    font-size: 6px;
+    height: 15px;
+    padding: 1px 2px;
+
+  }
+
+  .first-team {
+    height: 200px;
+  }
+
+  .slider {
+    column-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .player-details {
+    font-size: 120%;
+    margin-top: 58%;
+  }
+
+  .player7,
+  .player8,
+  .player9,
+  .player10,
+  .player11,
+  .player12 {
+    display: none;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  .footer {
+    height: 200px;
+  }
+
+  .social-media {
+    font-size: 14px;
+  }
+
+  .facebook {
+    height: 40px;
+    width: 55px;
+    background-color: #3b5998;
+  }
+
+  .facebook img {
+    width: 13px;
+    height: 12px;
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-bottom: 5px;
+  }
+
+  .instagram {
+    background: linear-gradient(#fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    height: 40px;
+    width: 55px;
+  }
+
+  .instagram img {
+    width: 15px;
+    height: 15px;
+    color: white;
+  }
+
+  .youtube img {
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 15px;
+    height: 13px;
+    color: white;
+  }
+
+  .spotify1 img {
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 15px;
+    height: 15px;
+    color: white;
+  }
+
+  .spotify1 {
+    height: 40px;
+    width: 55px;
+    background-color: #00d365;
+  }
+
+  .youtube {
+    height: 40px;
+    width: 55px;
+    background-color: #bb0000;
+  }
+
+  .tiktok {
+    height: 40px;
+    width: 55px;
+    background-color: black;
+  }
+
+  .tiktok img {
+    width: 15px;
+    height: 15px;
+  }
+
+
+  .media h4 {
+    font-size: 6px;
+  }
+
+  .media p {
+    font-size: 6px;
+  }
+
+
+  .h1 h2 {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 374px) {
+  header {
+    min-height: 5vh;
+  }
+
+  .user-buttons {
+    margin-right: 10px;
+  }
+
+  .register-btn,
+  .login-btn {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 16px;
+    margin-right: 5px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-position: 10px center;
+    padding-left: 40px;
+  }
+
+  nav {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 10px;
+  }
+
+  nav img {
+    margin-top: 50px;
+    width: 20%;
+  }
+
+  .nav-links ul {
+    display: flex;
+  }
+
+  .nav-links ul li a {
+    margin-top: 0;
+    padding: 2px 4px;
+    font-size: 12px;
+  }
+
+  .news-image {
+    margin-top: 10px;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+
+  .intro {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+  }
+
+  .intro h1 {
+    font-size: 30px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    height: 400px;
+  }
+
+  .data {
+    height: 70px;
+  }
+
+  .liga {
+    display: none;
+  }
+
+  .slider {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    column-gap: 5px;
+  }
+
+  .player-details {
+    font-size: 20px;
+    margin-top: 58%;
+  }
+
+  .player7,
+  .player8,
+  .player9,
+  .player10,
+  .player11,
+  .player12 {
+    display: none;
+  }
+
+  .blog-section .section-content .cards1 {
+    height: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 35px;
+  }
+
+  .blog-section .section-content .title h2 {
+    font-size: 20px;
+  }
+
+  .blog-section .section-content .cards1 .card1 {
+    margin-top: 18px;
+    width: 100%;
+    height: 295px;
+  }
+
+  .blog-section .section-content .cards1 .card1 img {
+    width: 100%;
+    height: 60%;
+  }
+
+  .blog-section .section-content .cards1 .card1 .article {
+    padding: 1px 2px;
+  }
+
+  .blog-section .section-content .cards1 .card1 .article h4 {
+    font-size: 12px;
+    color: #4a4a4a;
+  }
+
+  .blog-section .section-content .cards1 .card1 .article p {
+    font-size: 8px;
+    margin: 10px 0px;
+    color: #6a6a6a;
+  }
+
+  .blog-section .section-content .cards1 .card1 a {
+    font-size: 14px;
+    padding: 2px 3px;
+    margin-left: 20px;
+    color: #fff;
+    margin-bottom: 0px;
+  }
+
+  .blog-section .section-content .cards1 .card1 .posted-date {
+    width: 100%;
+  }
+
+  .blog-section .section-content .cards1 .card1 .posted-date p {
+    font-weight: 100;
+  }
+
+
+  .partners {
+    display: none;
+  }
+
+  .footer {
+    height: 350px;
+  }
+
+  .social-media {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #d1d1d1;
+  }
+
+  .media {
+    height: 70px;
+    width: 100%;
+
+  }
+
+  .media h4 {
+    font-size: 14px;
+  }
+
+  .media p {
+    font-size: 10px;
+  }
+
+  .media a {
+    font-weight: 100;
+  }
+
+  .facebook {
+    height: 80px;
+    width: 100px;
+    background-color: #3b5998;
+  }
+
+  .facebook img {
+    width: 30px;
+    height: 26px;
+  }
+
+  .instagram {
+    background: linear-gradient(#fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    height: 80px;
+    width: 100px;
+  }
+
+  .instagram img {
+    width: 30px;
+    height: 26px;
+    color: white;
+  }
+
+  .youtube img {
+    margin-top: 8px;
+    margin-left: 5px;
+    width: 30px;
+    height: 26px;
+    color: white;
+  }
+
+  .spotify1 img {
+    margin-top: 8px;
+    margin-left: 5px;
+    width: 30px;
+    height: 26px;
+    color: white;
+  }
+
+  .spotify1 {
+    height: 80px;
+    width: 100px;
+    margin-left: 50px;
+  }
+
+  .youtube {
+    height: 80px;
+    width: 100px;
+    background-color: #bb0000;
+  }
+
+  .tiktok {
+    height: 80px;
+    width: 100px;
+    background-color: black;
+  }
+
+  .tiktok img {
+    width: 30px;
+    height: 26px;
+    margin-top: 3px;
+    margin-left: 4px
+  }
+
+
+  .logo {
+    text-align: left;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .copyright {
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .links {
+    text-align: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .links li {
+    text-align: right;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+
+
+  .social-links li a {
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 50%;
+  }
+
+  .infor {
+    padding-bottom: 5px;
+    padding-left: 10px;
+
+  }
+
+  .seven {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .seven p {
+    font-size: 10px;
+  }
+
+  .Goalkeeper,
+  .Midfielder,
+  .Defender,
+  .Forward {
+    display: none;
+  }
+
+  .bottom {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .imagine img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .imagine {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .imagine h1 {
+    margin-top: 4px;
+  }
+
+  .terms {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 150px;
+  }
+
+  .terms p {
+    margin-top: 50px;
+    border-bottom: 2px solid #fff;
+    font-size: 12px;
+  }
+
+}
+
+@media only screen and (max-width: 900px) and (min-width: 599px) {
+  header {
+    min-height: 20vh;
+  }
+
+  .user-buttons {
+    margin-right: 10px;
+  }
+
+  .register-btn,
+  .login-btn {
+    display: flex;
+    justify-content: space-around;
+    background-position: 10px center;
+  }
+
+  nav {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+  }
+
+  nav img {
+    width: 10%;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-links ul li a {
+    margin-top: 0;
+    padding: 2px 4px;
+    font-size: 14px;
+  }
+
+  .nav-links ul {
+    display: flex;
+  }
+
+  .news-image {
+    margin-top: 0px;
+    height: 300px;
+    margin-bottom: 5px;
+  }
+
+  .cards {
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+  }
+
+  .card {
+    width: 70%;
+    height: 400px;
+  }
+
+  .data {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .liga {
+    display: none;
+  }
+
+  .data h2 {
+    font-size: 12px;
+  }
+
+  .data p {
+    font-size: 10px;
+  }
+
+  .slider {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    column-gap: 5px;
+  }
+
+  .player-details {
+    font-size: 20px;
+    margin-top: 58%;
+  }
+
+  .player7,
+  .player8,
+  .player9,
+  .player10,
+  .player11,
+  .player12 {
+    display: none;
+  }
+
+  .blog-section .section-content .cards1 {
+    height: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 35px;
+  }
+
+  .blog-section .section-content .title h2 {
+    font-size: 20px;
+  }
+
+  .blog-section .section-content .cards1 .card1 {
+    margin-top: 18px;
+    width: 100%;
+    height: 295px;
+  }
+
+  .blog-section .section-content .cards1 .card1 img {
+    width: 100%;
+    height: 60%;
+  }
+
+  .blog-section .section-content .cards1 .card1 .article {
+    padding: 1px 2px;
+  }
+
+  .blog-section .section-content .cards1 .card1 .article h4 {
+    font-size: 12px;
+
+  }
+
+  .blog-section .section-content .cards1 .card1 .article p {
+    font-size: 8px;
+    margin: 10px 0px;
+  }
+
+  .blog-section .section-content .cards1 .card1 a {
+    font-size: 14px;
+    padding: 2px 3px;
+    margin-left: 20px;
+
+    margin-bottom: 0px;
+  }
+
+  .blog-section .section-content .cards1 .card1 .posted-date {
+    width: 100%;
+  }
+
+  .blog-section .section-content .cards1 .card1 .posted-date p {
+    font-weight: 100;
+  }
+
+
+  .partners {
+    display: none;
+  }
+
+  .footer {
+    height: 350px;
+  }
+
+  .social-media {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 45px;
+    font-size: 16px;
+  }
+
+  .media {
+    height: 70px;
+    width: 100%;
+
+  }
+
+  .media h4 {
+    font-size: 14px;
+  }
+
+  .media p {
+    font-size: 10px;
+  }
+
+  .media a {
+    font-weight: 100;
+  }
+
+  .facebook {
+    height: 80px;
+    width: 100px;
+  }
+
+  .facebook img {
+    width: 30px;
+    height: 26px;
+  }
+
+  .instagram {
+    height: 80px;
+    width: 100px;
+  }
+
+  .instagram img {
+    width: 30px;
+    height: 26px;
+  }
+
+  .youtube img {
+    margin-top: 8px;
+    margin-left: 5px;
+    width: 30px;
+    height: 26px;
+  }
+
+  .spotify1 img {
+    margin-top: 8px;
+    margin-left: 5px;
+    width: 30px;
+    height: 26px;
+  }
+
+  .spotify1 {
+    height: 80px;
+    width: 100px;
+    margin-left: 50px;
+  }
+
+  .youtube {
+    height: 80px;
+    width: 100px;
+  }
+
+  .tiktok {
+    height: 80px;
+    width: 100px;
+  }
+
+  .tiktok img {
+    width: 30px;
+    height: 26px;
+    margin-top: 3px;
+    margin-left: 4px
+  }
+
+
+  .logo {
+    text-align: left;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .copyright {
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .links {
+    text-align: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .links li {
+    text-align: right;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+
+
+  .social-links li a {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 50%;
+  }
+
+  .infor {
+    padding-bottom: 5px;
+    padding-left: 10px;
+
+  }
+
+  .seven {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .seven p {
+    font-size: 10px;
+  }
+
+  .Goalkeeper,
+  .Midfielder,
+  .Defender,
+  .Forward {
+    display: none;
+  }
+
+  .bottom {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .imagine img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .imagine {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .imagine h1 {
+    margin-top: 4px;
+  }
+
+  .terms p {
+    margin-top: 50px;
+    border-bottom: 2px solid #fff;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 899px) {
+  header {
+    min-height: 50vh;
+  }
+
+  nav {
+    height: 90px;
+  }
+
+  nav a {
+    width: 20%;
+  }
+
+  .nav-links ul {
+    margin-left: 300px;
+    display: flex;
+  }
+
+  .news-image {
+    height: 500px;
+  }
+
+  .cards {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .Goalkeeper,
+  .Midfielder,
+  .Defender,
+  .Forward {
+    display: none;
+  }
+
+  .seven {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  header {
+    min-height: 50vh;
+  }
+
+  .nav-links ul {
+    margin-left: 70%;
+    display: flex;
+  }
+
+  .news-image {
+    width: 100%;
+    height: 800px;
+  }
+
+  .cards {
+    margin-left: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20PX;
+  }
+
+  .card {
+    width: 100%;
+    height: 500px;
+  }
+
+  .data {
+    width: 100%;
+    height: 60px;
+  }
+
+  .liga {
+    margin-left: 38%;
+    width: 30%;
+
+  }
+
+  .data h2 {
+    font-size: 12px;
+  }
+
+  .data p {
+    font-size: 10px;
+  }
+
+  .principal {
+    margin-left: 7%;
+    height: 150px;
+  }
+
+  .Goalkeeper{
+  display: none;
+}
+
+}
